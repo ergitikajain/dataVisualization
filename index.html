@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Indian Population Analysis</title>
+
+    <!-- ************ FULL PAGE ************** -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="scrollytelling.css"/>
+    <script type="text/javascript" src="fullpage/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+        var headerColor = '#ddd',
+            contentColor = '#fff';
+
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['title', 'aboutDataset', 'aboutVisualization', 'data', 'adultPopulation', 'data', 'childPopulation', 'data', 'analysis'],
+                sectionsColor: [headerColor, contentColor, contentColor, headerColor, contentColor, headerColor, contentColor, headerColor, contentColor],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Start', 'About Dataset', 'About Visualization', 'Data', 'Adult Population', 'Data', 'Child Population', 'Population Analysis', 'Drill Down Analysis']
+            });
+        });
+    
+    
+    
+    </script>
+    <style type="text/css">
+    svg {
+      background: rgba(255,255,255,0  );
+      }
+
+    #india {
+      fill: #008000;
+      opacity: .8;
+      stroke: #000000;
+      stroke-width: .7;
+      }
+      .svgDonut {
+  width: 100%;
+  height: 100%;
+}
+
+
+.toolTipDonut {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    box-shadow: -3px 3px 15px #888888;
+    color: black;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+text {
+  font: 12px sans-serif;
+}
+
+
+    
+    </style>
+
+
+    <link rel="stylesheet"
+          href="css/bootstrap.css"
+    >
+    <link href="css/starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/d3-tip.css" rel="stylesheet">
+
+
+    <script src="lib/d3.v4.min.js" charset="utf-8"></script>
+    <script src="lib/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v2.min.js"></script>
+    <script type="text/javascript" src="lib/d3.geo.min.js"></script>
+    <script src="lib/d3-tip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+
+
+</head>
+
+<div id="fullpage">
+    <div class="section" id="section0">
+        <div class="header" id="main-title">
+            <h1>Indian Population Analysis</h1>
+            <h2>Through the Lens of Data</h2>
+        </div>
+    </div>
+
+    <div class="section" id="section1">
+        <div class="content">
+            <h1>About Dataset</h1>
+
+
+            <p>
+
+                This dataset has been created by merging the census 2011 of Indian Cities with Population more than 1
+                Lac and
+                City wise number of Graduates from the Census 2011. The Census is one of the biggest workout conducted
+                by the
+                Government of India to understand the demographics of the country. It is conducted every 10 years. The
+                Britishers initiated it during the colonial times. It helps in a big way to come up with social and
+                economic
+                programs in the country. It also helps to identify the problems in the country. We can use this dataset
+                to
+                create a visualization to see where the future cities of India stand today.
+
+                More information can be found </p>
+
+
+            <a href="http://www.census2011.co.in" target="_blank">
+                <p class="lead">http://www.census2011.co.in</p></a>
+        </div>
+    </div>
+
+
+    <div class="section" id="section2">
+        <div class="content">
+
+
+            <h1>About the Visualization</h1>
+            <p>This visualization project is following the <strong>Martini Glass</strong> narrative
+                visualization structure.
+                Here first page provides the details about the dataset and this page talks about the visualization. The
+                next few pages
+                provide the overview of Adult and Child population of various states in the country. </p>
+            <p>The first eight scenes provides the author driven content. Population Analysis page which is the last page contains reader driven content and it allows users to interact with data and draw their own conclusions.
+            </p>
+            <p>All the chart are built using d3.js and HTML5</p>
+            <h3>User Interface Events</h3>
+            <p>User can navigate the pages by scrolling the mouse in up and down direction. User can click on the charts
+                to get more details. Also, the last page provides the some user interaction when user clicks on the Geo
+                map of India.
+            </p>
+            <h3>Annotations</h3>
+            <p>The annotation is represented by the legends and tooltip, which provides the more information about the
+                data.</p>
+            <h3>Triggers</h3>
+            <p>The mouse movement and mouse click events act as a trigger to faciliate the trigger on the charts. By
+                moving the mouse over the charts tooltip appears and disappears. Also, on clicking on the GeoMap of
+                India other charts are updated with the detailed information, which helps in drilling down the
+                information on the visualization presentation.
+            </p>
+            <h3>Parameters</h3>
+            <p>In the Analysis page, when user clicks on the GeoMap, the parameters has been passed from one chart to
+                other chart to get the relevant details.</p>
+        </div>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="header">
+            <h1>Adult Population</h1>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="content">
+            <h1>Adult Population in Indian States</h1>
+            <p>There are presently 28 states in India. The total population of the country is 1.21 billion presently.
+                According to the State Census 2011, the most populated state in India is Maharashtra. The least
+                populated state in the country is Sikkim with a population of 60,7688.</p>
+            <p>It is evident that in most of the states number of male is quite higher comparative to female.</p>
+            <div id="area1" class="treemap">
+                <svg id="adult" width="800" height="480"></svg>
+                <script src="lib/stem.js"></script>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="section" id="section5">
+        <div class="header">
+            <h1>Child Population in Indian States</h1>
+        </div>
+    </div>
+
+
+    <div class="section" id="section6">
+        <div class="content">
+
+            <h1>Child Population in Indian States</h1>
+            <p>According to Census 2011, similar to Male population, Average number of male kids populations is
+                significantly higher than female kids population.
+
+                Is this naturally possible or man made disaster?</p>
+            <div id="area2" class="treemap">
+                <svg id="child" width="800" height="480"></svg>
+                <script src="lib/second.js"></script>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section" id="section8">
+        <div class="header">
+            <h1>Population Analysis Across India</h1>
+        </div>
+    </div>
+
+    <div class="section" id="section8">
+        <div class="content">
+            <div class="alert alert-success" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <strong></strong> Explore the maps with your mouse. Click on any state to dig deeper.
+            </div>
+            <div class="container">
+                <div class="col-lg-6">
+                    <div id="chart"></div>
+                </div>
+                <div class="col-lg-6">
+
+                    <svg id='pieTotal' width="300" height="300"></svg>
+
+                    <div class="container">
+                        <div class="col-lg-2">
+                            <svg class="svgBar" width="300" height="360">
+                            </svg>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="chart1" id="chart1">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="lib/final.js"></script>
+
+
+    </div>
+    <body>
+    </body>
+</html>

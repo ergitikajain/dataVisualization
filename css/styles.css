@@ -1,0 +1,224 @@
+
+/* stylesheet for your custom graph */
+
+.background {
+  fill: none;
+  pointer-events: all;
+
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.label {
+  fill: black;
+  font-family: font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.chart2 {
+  margin-top:60px;
+  margin-bottom:50px;
+
+}
+.chart2 div {
+  font: 20px;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 10px;
+  color: white;
+}
+
+.svgBar {
+
+}
+.chart1 {
+  margin-top:60px;
+  margin-bottom:50px;
+
+}
+.chart1 div {
+  font: 20px;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 10px;
+  color: white;
+}
+
+.legendOrdinal {
+    font: 25px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.label : {
+   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.chart1>div:hover{
+  background-color: #F56C4E;
+}
+
+#chartBar div {
+  /* font: 10px sans-serif; */
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+.states :hover {
+  fill: red;
+}
+
+.state-borders {
+  fill: none;
+  stroke: white;
+  stroke-width: 1.0 px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+
+#tooltip-container {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid;
+  display: none;
+}
+
+#canvas svg {
+  border: 0px;
+}
+
+.tooltip_key {
+  font-weight: bold;
+}
+
+.tooltip_value {
+  margin-left: 20px;
+  float: right;
+}
+
+.x-axis {
+  fill: #000;
+}
+
+.axis {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.chart {
+  background: #fff;
+  margin: 5px;
+}
+
+.chart .state-bar {
+  stroke: white;
+  fill: steelblue;
+}
+
+.chart .score {
+  fill: white;
+}
+
+.chart text.name {
+  fill: #000;
+}
+
+.chart line {
+  stroke: #c1c1c1;
+}
+
+.chart .rule {
+  fill: #000;
+}
+
+.main-state-text {
+  fill: #FF4A4A;
+}
+
+.main-state-bar {
+  stroke: #FF4A4A;
+  stroke-width: 2px;
+}
+
+.chart {
+  font-size: 12px;
+}
+
+
+.legend rect {
+  fill:white;
+  stroke:black;
+  opacity:0.8;}
+
+
+#vegaChart.container {
+  padding-top : 40px;
+  padding-bottom: 40px;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size:20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+
+}
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
+.feature {
+  fill: #ccc;
+  cursor: pointer;
+}
+
+.feature.active {
+  fill: orange;
+}
+
+.mesh {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
