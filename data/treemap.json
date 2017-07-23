@@ -1,0 +1,264 @@
+{
+  "name": "states",
+  "children": [{
+      "name": "MAHARASHTRA",
+      "children": [{
+          "name": "Greater Mumbai ",
+          "size": 12478447
+        },
+        {
+          "name": "Pune ",
+          "size": 3115431
+        },
+        {
+          "name": "Nagpur ",
+          "size": 2405421
+        },
+        {
+          "name": "Thane ",
+          "size": 1818872
+        },
+        {
+          "name": "Pimpri Chinchwad ",
+          "size": 1729359
+        },
+        {
+          "name": "Nashik ",
+          "size": 1486973
+        },
+        {
+          "name": "Vasai Virar City ",
+          "size": 1221233
+        },
+        {
+          "name": "Aurangabad ",
+          "size": 1171330
+        },
+        {
+          "name": "Navi Mumbai ",
+          "size": 1119477
+        },
+        {
+          "name": "Solapur ",
+          "size": 951118
+        }
+      ]
+    },
+
+    {
+      "name": "NCT OF DELHI",
+      "children": [{
+        "name": "Delhi ",
+        "size": 11007835
+      }]
+    },
+    {
+
+      "name": "KARNATAKA",
+      "children": [{
+          "name": "Bengaluru",
+          "size": 8425970
+        },
+        {
+          "name": "Hubli-Dharwad ",
+          "size": 943857
+        }
+      ]
+    },
+    {
+      "name": "ANDHRA PRADESH",
+      "children": [{
+          "name": "Greater Hyderabad ",
+          "size": 6809970
+        },
+        {
+          "name": "Visakhapatnam",
+          "size": 1730320
+        },
+        {
+          "name": "Vijayawada ",
+          "size": 1048240
+        }
+      ]
+    },
+    {
+      "name": "GUJARAT",
+      "children": [{
+          "name": "Ahmadabad ",
+          "size": 5570585
+        },
+        {
+          "name": "Surat ",
+          "size": 4462002
+        },
+        {
+          "name": "Vadodara ",
+          "size": 1666703
+        },
+        {
+          "name": "Rajkot ",
+          "size": 1286995
+        }
+      ]
+    }, {
+      "name": "TAMIL NADU",
+      "children": [{
+          "name": "Chennai ",
+          "size": 4681087
+        },
+        {
+          "name": "Coimbatore ",
+          "size": 1061447
+        },
+        {
+          "name": "Madurai ",
+          "size": 1016885
+        }
+      ]
+    }, {
+      "name": "WEST BENGAL",
+      "children": [{
+          "name": "Kolkata ",
+          "size": 4486679
+        },
+        {
+          "name": "Haora ",
+          "size": 1072161
+        }
+      ]
+    },
+    {
+      "name": "RAJASTHAN",
+      "children": [{
+          "name": "Jaipur ",
+          "size": 3073350
+        },
+        {
+          "name": "Jodhpur ",
+          "size": 1033918
+        },
+        {
+          "name": "Kota ",
+          "size": 1001365
+        }
+      ]
+    }, {
+      "name": "UTTAR PRADESH",
+      "children": [{
+          "name": "Lucknow ",
+          "size": 2815601
+        },
+        {
+          "name": "Kanpur ",
+          "size": 2767031
+        },
+        {
+          "name": "Agra ",
+          "size": 1574542
+        },
+        {
+          "name": "Meerut ",
+          "size": 1309023
+        },
+        {
+          "name": "Varanasi ",
+          "size": 1201815
+        },
+        {
+          "name": "Allahabad ",
+          "size": 1117094
+        },
+        {
+          "name": "Bareilly ",
+          "size": 898167
+        },
+        {
+          "name": "Moradabad ",
+          "size": 889810
+        }
+      ]
+    },
+    {
+      "name": "MADHYA PRADESH",
+      "children": [{
+          "name": "Indore ",
+          "size": 1960631
+        },
+        {
+          "name": "Bhopal ",
+          "size": 1795648
+        },
+        {
+          "name": "Jabalpur ",
+          "size": 1054336
+        },
+        {
+          "name": "Gwalior ",
+          "size": 1053505
+        }
+      ]
+    },
+    {
+      "name": "BIHAR",
+      "children": [{
+        "name": "Patna ",
+        "size": 1683200
+      }]
+    },
+    {
+      "name": "PUNJAB",
+      "children": [{
+          "name": "Ludhiana ",
+          "size": 1613878
+        },
+        {
+          "name": "Amritsar ",
+          "size": 1132761
+        }
+      ]
+    }, {
+      "name": "HARYANA",
+      "children": [{
+        "name": "Faridabad ",
+        "size": 1404653
+      }]
+    }, {
+      "name": "JAMMU AND KASHMIR",
+      "children": [{
+        "name": "Srinagar ",
+        "size": 1192792
+      }]
+    }, {
+      "name": "JHARKHAND",
+      "children": [{
+          "name": "Dhanbad ",
+          "size": 1161561
+        },
+        {
+          "name": "Ranchi ",
+          "size": 1073440
+        }
+      ]
+    },
+    {
+      "name": "CHHATTISGARH",
+      "children": [{
+        "name": "Raipur ",
+        "size": 1010087
+      }]
+    }, {
+      "name": "ASSAM",
+      "children": [{
+        "name": "Guwahati ",
+        "size": 963429
+      }]
+    }, {
+      "name": "CHANDIGARH",
+      "children": [{
+        "name": "Chandigarh ",
+        "size": 960787
+      }]
+    }
+
+  ]
+}

@@ -61,7 +61,61 @@
 text {
   font: 12px sans-serif;
 }
+  .node {
+        border: solid 1px white;
+        font: 0.625em sans-serif;
+        line-height: 12px;
+        overflow: hidden;
+        position: absolute;
+        text-indent: 2px;
+        cursor: default;
+    }
 
+    .ledg{
+        font: .8em sans-serif;
+        position: absolute;
+        text-indent: 5px;
+    }
+
+    a {
+        color: dimgray;
+    }
+
+    .toolTipTreeMap {
+        position: absolute;
+        display: none;
+        width: auto;
+        height: auto;
+        background: none repeat scroll 0 0 white;
+        border: 0 none;
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: -3px 3px 15px #888888;
+        color: black;
+        font: 12px sans-serif;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .axis path,
+.axis line {
+  fill: none;
+  stroke: #D4D8DA;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+.x path {
+    display: none;
+}
+.toolTipHrBarChart {
+    position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px;
+  padding: 14px;
+  text-align: center;
+}
 
     
     </style>
@@ -196,7 +250,7 @@ text {
     </div>
 
 
-    <div class="section" id="section8">
+    <div class="section" id="section7">
         <div class="header">
             <h1>Population Analysis Across India</h1>
         </div>
@@ -235,9 +289,57 @@ text {
         </div>
 
         <script src="lib/final.js"></script>
+     </div>
 
-
+         <div class="section" id="section9">
+        <div class="header">
+            <h1>Top 50 Cities in India</h1>
+        </div>
     </div>
+
+
+    <div class="section" id="section10">
+        <div class="content">
+
+            <h1>Child Population in Indian States</h1>
+            <p>According to Census 2011, similar to Male population, Average number of male kids populations is
+                significantly higher than female kids population.
+
+                Is this naturally possible or man made disaster?</p>
+            <form>
+  <label><input type="radio" name="mode" value="size" checked> Size</label>
+  <label><input type="radio" name="mode" value="count"> Count</label>
+</form>
+
+ <br/>
+ <div id="treemap"> </div>
+ <div id="tooltipTreeMap"> </div>
+<script src="lib/treemap.js"></script>
+        </div>
+    </div>
+
+
+         <div class="section" id="section11">
+        <div class="header">
+            <h1>Top 50 Cities in India</h1>
+        </div>
+    </div>
+
+
+    <div class="section" id="section12">
+        <div class="content">
+
+            <h1>Child Population in Indian States</h1>
+            <p>According to Census 2011, similar to Male population, Average number of male kids populations is
+                significantly higher than female kids population.
+
+                Is this naturally possible or man made disaster?</p>
+       <svg id="hrbarchart" width="960" height="600"></svg>
+<script src="lib/cities.js"></script>
+        </div>
+    </div>
+
+
     <body>
     </body>
 </html>
