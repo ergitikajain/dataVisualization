@@ -16,11 +16,11 @@
 
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['title', 'aboutDataset', 'aboutVisualization', 'citiesTitle', 'citiesData','stateCityTitle','stateCityDatat' ,'adultdatatitle', 'adultPopulation', 'childdatatitile', 'childPopulation', 'analysistitle', 'analysis'],
-                sectionsColor: [headerColor, contentColor, contentColor, headerColor, contentColor, headerColor, contentColor, headerColor, contentColor],
+                anchors: ['title', 'aboutDataset', 'aboutVisualization', 'stateCityTitle','stateCityData', 'citiesTitle', 'citiesData','adultdatatitle', 'adultPopulation', 'childdatatitle', 'childPopulation', 'analysistitle', 'analysis'],
+                sectionsColor: [headerColor, contentColor, contentColor, headerColor, contentColor, headerColor, contentColor, headerColor, contentColor,headerColor, contentColor,headerColor, contentColor],
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['Start', 'About Dataset', 'About Visualization', 'Top 50 Cities Title','Top 50 Cities By Populations','State by Number of Cities Title','State By Number of Cities','Adult Data Title', 'Adult Population', 'Child Data Title', 'Child Population', 'Population Analysis', 'Drill Down Analysis']
+                navigationTooltips: ['Start', 'About Dataset', 'About Visualization', 'State by Number of Cities Title','State By Number of Cities','Top 50 Cities Title','Top 50 Cities By Populations','Adult Data Title', 'Adult Population', 'Child Data Title', 'Child Population', 'Population Analysis', 'Drill Down Analysis']
             });
         });
     
@@ -59,7 +59,7 @@
     text-align: center;
 }
 text {
-  font: 12px sans-serif;
+  font: 10px sans-serif;
 }
   .node {
         border: solid 1px white;
@@ -258,17 +258,13 @@ text {
                 populated state in the country is Sikkim with a population of 60,7688.</p>
             <p>It is evident that in most of the states number of male is quite higher comparative to female.</p>
             <div id="area1" class="treemap">
-                <svg id="adult" width="800" height="480"></svg>
+                <svg id="adult" width="800" height="550"></svg>
                 <script src="lib/stem.js"></script>
             </div>
 
 
         </div>
     </div>
-
-
-  
-
 
     <div class="section" id="section7">
         <div class="header">
@@ -286,7 +282,7 @@ text {
 
                 Is this naturally possible or man made disaster?</p>
             <div id="area2" class="treemap">
-                <svg id="child" width="800" height="480"></svg>
+                <svg id="child" width="800" height="550"></svg>
                 <script src="lib/second.js"></script>
             </div>
         </div>
