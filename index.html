@@ -178,17 +178,13 @@ text {
 
             <h1>About the Visualization</h1>
             <p>This visualization project is following the <strong>Interactive Slide Show</strong> narrative
-                visualization structure.
-                Here first page provides the details about the dataset and this page talks about the visualization. The
-                next few pages
-                provide the overview of Adult and Child population of various states in the country. </p>
-            <p>The first eight scenes provides the author driven content. Population Analysis page which is the last page contains reader driven content and it allows users to interact with data and draw their own conclusions.
+                visualization structure, where user can navigate the slides by either clicking on the circle shown on right hand side or by using UP/DOWN arrow keys. 
+                Here every page has a title page followed by charts showing the details. All the charts provided are interactive, user can drill down in the charts using mouse events like mouse hover or in some cases mouse click. </p>
+            <p>The title scenes provides the author driven content. And the charts provides the reader driven content, which allows users to interact with data and draw their own conclusions.
             </p>
             <p>All the chart are built using d3.js and HTML5</p>
-            <h3>User Interface Events</h3>
-            <p>User can navigate the pages by scrolling the mouse in up and down direction. User can click on the charts
-                to get more details. Also, the last page provides the some user interaction when user clicks on the Geo
-                map of India.
+            <h3>Scenes</h3>
+            <p>Here the scenes are presented using slides. Eash slide has a provides the information related to the dataset. Slides are created using a particular templates where title has been followed by chart. The Title slide has different background color than content slide. User can navigate the scenes by scrolling the mouse in up and down direction.
             </p>
             <h3>Annotations</h3>
             <p>The annotation is represented by the legends and tooltip, which provides the more information about the
@@ -201,7 +197,7 @@ text {
             </p>
             <h3>Parameters</h3>
             <p>In the Analysis page, when user clicks on the GeoMap, the parameters has been passed from one chart to
-                other chart to get the relevant details.</p>
+                other chart to get the relevant details. Also, state name has been passed in all the javascripts as a parameter to fetch the information related to particular state and shows that information on tooltips.</p>
         </div>
     </div>
 
