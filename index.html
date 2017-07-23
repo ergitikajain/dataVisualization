@@ -16,11 +16,11 @@
 
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['title', 'aboutDataset', 'aboutVisualization', 'adultdatatitle', 'adultPopulation', 'childdatatitile', 'childPopulation', 'analysistitle', 'analysis'],
+                anchors: ['title', 'aboutDataset', 'aboutVisualization', 'citiesTitle', 'citiesData','stateCityTitle','stateCityDatat' ,'adultdatatitle', 'adultPopulation', 'childdatatitile', 'childPopulation', 'analysistitle', 'analysis'],
                 sectionsColor: [headerColor, contentColor, contentColor, headerColor, contentColor, headerColor, contentColor, headerColor, contentColor],
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['Start', 'About Dataset', 'About Visualization', 'Adult Data Title', 'Adult Population', 'Child Data Title', 'Child Population', 'Population Analysis', 'Drill Down Analysis']
+                navigationTooltips: ['Start', 'About Dataset', 'About Visualization', 'Top 50 Cities Title','Top 50 Cities By Populations','State by Number of Cities Title','State By Number of Cities','Adult Data Title', 'Adult Population', 'Child Data Title', 'Child Population', 'Population Analysis', 'Drill Down Analysis']
             });
         });
     
@@ -150,9 +150,7 @@ text {
     <div class="section" id="section1">
         <div class="content">
             <h1>About Dataset</h1>
-
-
-            <p>
+             <p>
 
                 This dataset has been created by merging the census 2011 of Indian Cities with Population more than 1
                 Lac and
@@ -207,12 +205,52 @@ text {
         </div>
     </div>
 
-    <div class="section" id="section3">
+
+  <div class="section" id="section3">
+        <div class="header">
+            <h1>States by Number of Cities</h1>
+        </div>
+    </div>
+
+    <div class="section" id="section4">
+        <div class="content">
+
+            <h1>States by Number of Cities</h1>
+            <p>Uttar Pradesh has highest number of Cities</p>
+       <svg id="hrbarchart" width="960" height="600"></svg>
+       <script src="lib/cities.js"></script>
+        </div>
+    </div>
+
+ 
+
+    <div class="section" id="section5">
+        <div class="header">
+            <h1>Top 50 Cities in India</h1>
+        </div>
+    </div>
+
+  <div class="section" id="section6">
+        <div class="content">
+
+            <h1>Top 50 Cities by Population</h1>
+            <p>The captical cities of big economic states have the biggest population. Greater Mumbai has highes population in India.</p>
+ 
+        <br/>
+        <div id="treemap"> </div>
+        <div id="tooltipTreeMap"> </div>
+        <script src="lib/treemap.js"></script>
+        </div>
+    </div>
+
+
+
+    <div class="section" id="section7">
         <div class="header">
             <h1>Adult Population</h1>
         </div>
     </div>
-    <div class="section" id="section4">
+    <div class="section" id="section6">
         <div class="content">
             <h1>Adult Population in Indian States</h1>
             <p>There are presently 28 states in India. The total population of the country is 1.21 billion presently.
@@ -227,14 +265,19 @@ text {
 
         </div>
     </div>
-    <div class="section" id="section5">
+
+
+  
+
+
+    <div class="section" id="section7">
         <div class="header">
             <h1>Child Population in Indian States</h1>
         </div>
     </div>
 
 
-    <div class="section" id="section6">
+    <div class="section" id="section8">
         <div class="content">
 
             <h1>Child Population in Indian States</h1>
@@ -250,20 +293,23 @@ text {
     </div>
 
 
-    <div class="section" id="section7">
+    <div class="section" id="section9">
         <div class="header">
             <h1>Population Analysis Across India</h1>
         </div>
     </div>
 
-    <div class="section" id="section8">
+    <div class="section" id="section10">
         <div class="content">
             <div class="alert alert-success" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
                 <strong></strong> Explore the maps with your mouse. Click on any state to dig deeper.
             </div>
+            <h4 class="text-center" id="title1"></h4>
             <div class="container">
+
+
                 <div class="col-lg-6">
                     <div id="chart"></div>
                 </div>
@@ -291,53 +337,7 @@ text {
         <script src="lib/final.js"></script>
      </div>
 
-         <div class="section" id="section9">
-        <div class="header">
-            <h1>Top 50 Cities in India</h1>
-        </div>
-    </div>
 
-
-    <div class="section" id="section10">
-        <div class="content">
-
-            <h1>Child Population in Indian States</h1>
-            <p>According to Census 2011, similar to Male population, Average number of male kids populations is
-                significantly higher than female kids population.
-
-                Is this naturally possible or man made disaster?</p>
-            <form>
-  <label><input type="radio" name="mode" value="size" checked> Size</label>
-  <label><input type="radio" name="mode" value="count"> Count</label>
-</form>
-
- <br/>
- <div id="treemap"> </div>
- <div id="tooltipTreeMap"> </div>
-<script src="lib/treemap.js"></script>
-        </div>
-    </div>
-
-
-         <div class="section" id="section11">
-        <div class="header">
-            <h1>Top 50 Cities in India</h1>
-        </div>
-    </div>
-
-
-    <div class="section" id="section12">
-        <div class="content">
-
-            <h1>Child Population in Indian States</h1>
-            <p>According to Census 2011, similar to Male population, Average number of male kids populations is
-                significantly higher than female kids population.
-
-                Is this naturally possible or man made disaster?</p>
-       <svg id="hrbarchart" width="960" height="600"></svg>
-<script src="lib/cities.js"></script>
-        </div>
-    </div>
 
 
     <body>
