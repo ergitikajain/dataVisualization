@@ -85,10 +85,10 @@ body {
 .content {
 	text-align:left;
 	padding-left: 100px;
-	padding-right: 100px;
+	padding-right: 80px;
 	font-weight:400;
 }
 .content p {
-	font-size: 120%;
-	width: 80%;
+	font-size: 110%;
+	width: 90%;
 }
