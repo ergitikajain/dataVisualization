@@ -16,11 +16,11 @@
 
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                anchors: ['title', 'aboutDataset', 'aboutVisualization', 'stateCityTitle','stateCityData', 'citiesTitle', 'citiesData','adultdatatitle', 'adultPopulation', 'childdatatitle', 'childPopulation', 'analysistitle', 'analysis'],
-                sectionsColor: [headerColor, contentColor, contentColor, headerColor, contentColor, headerColor, contentColor, headerColor, contentColor,headerColor, contentColor,headerColor, contentColor],
+                anchors: ['title', 'aboutDataset', 'aboutVisualization', 'stateCityTitle','stateCityData', 'citiesTitle', 'citiesData','adultdatatitle', 'adultPopulation', 'childdatatitle', 'childPopulation', 'analysistitle', 'analysis', 'aboutThisProject'],
+                sectionsColor: [headerColor, contentColor, contentColor, headerColor, contentColor, headerColor, contentColor, headerColor, contentColor,headerColor, contentColor,headerColor, contentColor, contentColor],
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['Start', 'About Dataset', 'About Visualization', 'State by Number of Cities Title','State By Number of Cities','Top 50 Cities Title','Top 50 Cities By Populations','Adult Data Title', 'Adult Population', 'Child Data Title', 'Child Population', 'Population Analysis', 'Drill Down Analysis']
+                navigationTooltips: ['Start', 'About Dataset', 'About Visualization', 'State by Number of Cities Title','State By Number of Cities','Top 50 Cities Title','Top 50 Cities By Populations','Adult Data Title', 'Adult Population', 'Child Data Title', 'Child Population', 'Population Analysis', 'Drill Down Analysis', 'About This Project']
             });
         });
     
@@ -123,6 +123,11 @@ text {
   opacity:0.85;
   shape-rendering: crispEdges;
 }
+.footerText {
+    margin: 20px 150px 100px 850px;
+    width: auto;
+    height: auto;
+}
 
     
     </style>
@@ -152,7 +157,7 @@ text {
             <h1>Indian Population Analysis</h1>
             <h2>Through the Lens of Data</h2>
         </div>
-    </div>
+        </div>
 
     <div class="section" id="section1">
         <div class="content">
@@ -187,7 +192,7 @@ text {
             <p>This visualization project is following the <strong>Interactive Slide Show</strong> narrative
                 visualization structure, where user can navigate the slides by either clicking on the circle shown on right hand side or by using UP/DOWN arrow keys. </p>
             <p>The title scenes provide the author driven content, while the charts provide the reader driven content, which allow users to interact with the data and draw their own conclusion.
-            All the chart are built using <strong>d3.js and HTML5</strong></p>
+            All the chart are built using <strong>d3.js , HTML and jQuery</strong></p>
             <h3>Scenes</h3>
             <p>Here, the scenes are presented using slides. Each slide provides the information related to the dataset. Slides are created using a particular template where title scene has been followed by chart scene. The Title slide has different background color than content slide. User can navigate the scenes by scrolling the mouse in up and down direction. All the charts provided are interactive where user can drill down in the charts using mouse events like mouse hover or in some cases mouse click.
             </p>
@@ -254,8 +259,7 @@ text {
         <div class="content">
             <h1>Adult Population in Top 500 Cities of Indian States</h1>
             <p>There are presently 28 states in India. The total population of the country is 1.21 billion presently.
-                According to the State Census 2011, the most populated big cities in India are in Maharashtra. The least
-                populated state in the country is Sikkim with a population of 607,688.</p>
+                According to the State Census 2011, the most populated big cities in India are in Maharashtra.</p>
             <p>It is evident that in most of the states number of male is quite higher comparative to female.</p>
 
             <div id="area1" class="treemap">
@@ -278,10 +282,9 @@ text {
         <div class="content">
 
             <h1>Child Population in Top 500 Cities of Indian States</h1>
-            <p>According to Census 2011, similar to Male population, Average number of male children population is
-                significantly higher than female children population.
+            <p>According to Census 2011, similar to Adult population, Maharastra has highest number of kids between 0-6 age group. Also, similar to Male population, Average number of male children population is significantly higher than female children population.
 
-                Is this naturally possible or man-made disaster?</p>
+                Is this naturally possible or man-made disaster? This Gender imbalance seems as a major threat to country.</p>
             <div id="area2" class="treemap">
                 <svg id="child" width="800" height="550"></svg>
                 <script src="lib/second.js"></script>
@@ -334,7 +337,17 @@ text {
         <script src="lib/final.js"></script>
      </div>
 
+    <div class="section" id="section1">
+        <div class="content">
+                        <h1>About this project</h1>
+<p> This project has been created by <a href="https://www.linkedin.com/in/gitika-jain-2aab7024/">Gitika
+            Jain</a>. </p>
+            <p>This is the final project for CS598 - Data Visualization course at MCS-DS UIUC. </p>
+            <p>This visualization provides the information about the current statistics like population, literacy rate of the country which reveals some of the major issues as Gender imbalance, illiteracy.  This information can be used to further improve these issues. 
+   
+        </div>
 
+     </div>
 
 
     <body>
